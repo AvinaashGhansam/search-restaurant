@@ -19,19 +19,20 @@ const SearchScreen: React.FC = () => {
       {errorMessage ? <Text>{errorMessage}</Text> : null}
       <Text>we have found {restaurants.length}</Text>
       <RestaurantList
-        filterRestaurantByPrice={filterRestaurantByPrice}
-        price="$"
+        filterRestaurantByPrice={(price) => filterRestaurantByPrice(price)}
         title="Cost Effective"
+        price="$"
       />
+
       <RestaurantList
-        filterRestaurantByPrice={filterRestaurantByPrice}
-        price="$$"
+        filterRestaurantByPrice={(price) => filterRestaurantByPrice(price)}
         title="Bit Pricer"
+        price="$$"
       />
       <RestaurantList
-        filterRestaurantByPrice={filterRestaurantByPrice}
-        price="$$$"
+        filterRestaurantByPrice={(price) => filterRestaurantByPrice(price)}
         title="Big Spender"
+        price="$$$"
       />
     </View>
   );
