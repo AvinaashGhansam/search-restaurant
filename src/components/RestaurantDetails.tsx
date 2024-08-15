@@ -16,6 +16,7 @@ const RestaurantDetails: React.FC<IRestaurantDetails> = ({ restaurant }) => {
     </View>
   );
 };
+
 const styles = StyleSheet.create({
   container: {
     marginLeft: 15,

@@ -27,6 +27,7 @@ const SearchBar: React.FC<ISearchBar> = ({
     </View>
   );
 };
+
 const styles = StyleSheet.create({
   backgroundStyle: {
     marginTop: 15,
@@ -35,6 +36,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     marginHorizontal: 15,
     flexDirection: 'row',
+    marginBottom: 10,
   },
   inputStyle: {
     // borderColor: 'black',

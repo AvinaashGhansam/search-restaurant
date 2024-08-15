@@ -13,7 +13,7 @@ const useRestaurant = (): [
 
   async function searchApi(restaurant: string) {
     try {
-      // ADD TYPE TO RESPONSE BODY
+      // ADD TYPES TO RESPONSE BODY
       const response = await yelp.get<{ businesses: Restaurant[] }>('/search', {
         // Query String
         params: {
@@ -29,8 +29,9 @@ const useRestaurant = (): [
       }
     }
   }
+
   useEffect(() => {
-    void searchApi('Pasta');
+    void searchApi('pizza');
   }, []);
 
   return [searchApi, errorMessage, restaurants];

@@ -5,4 +5,5 @@ export interface Restaurant {
   price: string;
   rating: number;
   review_count: number;
+  photos: string[];
 }
